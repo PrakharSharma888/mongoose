@@ -9,13 +9,6 @@ mongoose.connect(
 
 const app = express();
 
-const contactSchema = {
-    email: String,
-    query: String,
- }; 
-
-const Contract = mongoose.model("Contact", contactSchema);
-
 app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({
